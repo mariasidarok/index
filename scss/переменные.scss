@@ -1,0 +1,65 @@
+$font-primary: 'Roboto Condensed';
+$font-secondary: 'Raleway';
+$color-white: #ffffff;
+$color-black: #000000;
+$color-gray: #F8F8F8;
+$color-accent: #00B2A0;
+$color-header: #0D302C;
+$color-section-title: #01353E;
+$color-grey-form: #DADADA;
+$font-size-small: 14px;
+$font-size-medium: 24px;
+$font-size-large: 48px;
+$font-size-title: 200px;
+$letter-spacing: 0.60px;
+$max-width-container: 1200px;
+$max-width-wrap: 1080px;
+$header-height: 1080px;
+$about-height: 966px;
+$gap: 10px;
+
+@mixin section-titles {
+    font-family: Raleway;
+    font-size: 48px;
+    color: $color-section-title;
+    font-weight: 600;
+    letter-spacing: 0.6px;
+    position: relative;
+}
+@mixin slash {
+    position: absolute;
+    color: $color-accent;
+    font-size: 72px;
+    font-weight: 600;
+    font-family: $font-secondary;
+ 
+}
+@mixin columnFlex ($gap) {
+ gap: $gap;
+ display: flex;
+ flex-direction: column;
+}
+@mixin paragraphs {
+    font-family: $font-primary;
+    line-height: 18px;
+    font-size: 14px;
+    letter-spacing: 0.6px;
+    font-weight: 300;
+    color: #242121;
+    word-wrap: break-word;
+}
+@mixin textMedium{
+    font-size: 24px;
+    line-height: 18px;
+    color:#242121;
+    font-weight: 400;
+}
+@mixin button {
+    background-color: $color-white;
+    color: #242121; 
+    border: 1px solid #C4C4C4; 
+    padding: 24px 91px 22px 91px;
+    font-weight: 400;
+    width: 350px;
+    font-family:'Roboto Condensed';
+}
